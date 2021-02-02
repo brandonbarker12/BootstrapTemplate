@@ -1,0 +1,19 @@
+{
+  "name": "bootstraptemplate",
+  "version": "1.0.0",
+  "description": "[Grayscale](https://startbootstrap.com/theme/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonbarker12/BootstrapTemplate.git"
+  },
+  "author": "Brandon Barker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonbarker12/BootstrapTemplate/issues"
+  },
+  "homepage": "https://github.com/brandonbarker12/BootstrapTemplate#readme"
+}
