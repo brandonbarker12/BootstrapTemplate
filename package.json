@@ -4,7 +4,14 @@
   "description": "[Grayscale](https://startbootstrap.com/theme/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js",
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/brandonbarker12/BootstrapTemplate/issues"
   },
-  "homepage": "https://github.com/brandonbarker12/BootstrapTemplate#readme"
+  "homepage": "https://github.com/brandonbarker12/BootstrapTemplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
